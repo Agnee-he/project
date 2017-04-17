@@ -23,7 +23,7 @@
           <!--<div class="inner inner-hook"></div>-->
         <!--</div>-->
       <!--</transition>-->
-      <transition name="shopdemo">
+      <transition name="fold">
         <div class="shopcart-list" v-show="showCart&&totalCount">
           <div class="list-header">
             <h1 class="title">购物车</h1>
@@ -340,11 +340,11 @@
     z-index: -1;
     width: 100%;
   }
-  .shopdemo-enter-active, .shopdemo-leave-active {
+  .fold-enter-active, .fold-leave-active {
     transition: all 0.5s;
     transform: translateY(-100%);
   }
-  .shopdemo-enter, .shopdemo-leave-active {
+  .fold-enter, .fold-leave-active {
     transform: translateY(0);
   }
   .shopcart-list .list-header{
